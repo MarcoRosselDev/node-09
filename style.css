@@ -1,30 +1,35 @@
+:root{
+    --light-bg-cl: rgb(232, 232, 232);
+    --dark-bg-cl:rgb(0,0,0);
+}
+
 body{
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
-    background-color: whitesmoke;
+    background-color: var(--light-bg-cl);
     width: 100vw;
     height: 100vh;
 }
 
 .nav-bar button{
-    background-color: black;
+    background-color: var(--dark-bg-cl);
     border-radius: 5px;
-    color: aliceblue;
+    color: var(--light-bg-cl);
     width: 120px;
     height: 30px;
 }
 
 .nav-bar {
-    border: solid lightblue;
-    background-color: aliceblue;
-    color: rgb(5, 25, 43);
+    border: solid var(--dark-bg-cl);
+    background-color: var(--light-bg-cl);
+    color: var(--dark-bg-cl);
     display: flex;
     flex-flow:wrap row;
 }
 
-.nav-bar p{
-    border: solid red;
+.nav-bar p, img{
+    border: solid var(--dark-bg-cl);
     width: 50px;
     text-align: center;
 }
