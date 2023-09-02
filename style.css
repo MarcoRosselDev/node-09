@@ -1,11 +1,30 @@
 body{
-    background-color: blueviolet;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-bar button{
+    background-color: black;
+    border-radius: 5px;
+    color: aliceblue;
+    width: 120px;
+    height: 30px;
 }
 
 .nav-bar {
+    border: solid lightblue;
     background-color: aliceblue;
     color: rgb(5, 25, 43);
     display: flex;
-    flex-direction: row;
-    gap: 5rem;
+    flex-flow:wrap row;
+}
+
+.nav-bar p{
+    border: solid red;
+    width: 50px;
+    text-align: center;
 }
