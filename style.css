@@ -1,6 +1,6 @@
 :root{
-    --light-bg-cl: rgb(232, 232, 232);
-    --dark-bg-cl:rgb(0,0,0);
+    --light-bg-cl: rgb(213, 208, 208);
+    --dark-bg-cl:rgb(34, 32, 32);
 }
 /*body ---------------------------------------------*/
 body{
@@ -22,13 +22,6 @@ body{
 }
 
 /*nav-bar ---------------------------------------------*/
-.nav-bar button{
-    background-color: var(--dark-bg-cl);
-    border-radius: 5px;
-    color: var(--light-bg-cl);
-    width: 120px;
-    height: 30px;
-}
 
 body nav {
     display: flex;
@@ -47,8 +40,15 @@ body nav {
     border: solid var(--light-bg-cl);
 }
 
-.nav-bar p, img{
+body nav p, img{
     border: solid var(--dark-bg-cl);
     width: 50px;
     text-align: center;
+}
+body nav button{
+    background-color: rgb(5, 78, 151);
+    border-radius: 10px;
+    color: rgb(224, 224, 224);
+    width: 120px;
+    height: 30px;
 }
