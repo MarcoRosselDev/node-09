@@ -2,16 +2,26 @@
     --light-bg-cl: rgb(232, 232, 232);
     --dark-bg-cl:rgb(0,0,0);
 }
-
+/*body ---------------------------------------------*/
 body{
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
-    background-color: var(--light-bg-cl);
     width: 100vw;
     height: 100vh;
 }
 
+.body-light{
+    color: var(--dark-bg-cl);
+    background-color: var(--light-bg-cl);
+}
+
+.body-dark{
+    color: var(--light-bg-cl);
+    background-color: var(--dark-bg-cl);
+}
+
+/*nav-bar ---------------------------------------------*/
 .nav-bar button{
     background-color: var(--dark-bg-cl);
     border-radius: 5px;
