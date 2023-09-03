@@ -30,12 +30,21 @@ body{
     height: 30px;
 }
 
-.nav-bar {
-    border: solid var(--dark-bg-cl);
-    background-color: var(--light-bg-cl);
-    color: var(--dark-bg-cl);
+body nav {
     display: flex;
     flex-flow:wrap row;
+}
+
+.nav-bar-light{
+    color: var(--dark-bg-cl);
+    background-color: var(--light-bg-cl);
+    border: solid var(--dark-bg-cl);
+}
+
+.nav-bar-dark{
+    color: var(--light-bg-cl);
+    background-color: var(--dark-bg-cl);
+    border: solid var(--light-bg-cl);
 }
 
 .nav-bar p, img{
