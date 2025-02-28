@@ -1,0 +1,14 @@
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(8, 6, 20);
+  color: rgb(198, 223, 245);
+}
+.firefox-icon{
+  width: 100px;
+  height: 100px;
+}
