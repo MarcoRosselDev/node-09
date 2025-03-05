@@ -109,3 +109,25 @@ SET model='Bronco'
 WHERE brand='Ford';
 
 ```
+
+# Cambiar columna de tabla
+cambia el tipo de dato int a string de 4 caracteres
+```sql
+ALTER TABLE cars
+ALTER COLUMN year TYPE VARCHAR(4);
+```
+# Eliminar clumna
+```sql
+ALTER TABLE cars
+DROP COLUMN color;
+```
+# Eliminiar Registro (elemento, documento, etc...)
+ojito con el where, si no se tiene cuidado se puede eliminar todo.
+```sql
+DELETE FROM cars
+WHERE brand = 'Volvo';
+```
+# Eliminar tabla
+```sql
+DROP TABLE cars;
+```
