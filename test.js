@@ -15,6 +15,8 @@ console.log(PASS_PSQL);
 try {
   const customers = await db.any('select * from categories;');
   console.log(customers);
+  console.log(customers[1], "query finalizada");
+  
 } catch (error) {
   console.log(error);
 }

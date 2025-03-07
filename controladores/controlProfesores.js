@@ -1,10 +1,19 @@
+import db from "../postgres/db.js"
+
 class ProfesoresControl {
   constructor(req, res){
     /* req = this.req
     res = this.res */
   }
-  get(req, res){
-    res.send({mensaje: `get profesores`})
+  async get(req, res){
+    try {
+      const customers = await db.any('select * from categories;');
+      console.log(customers);
+      console.log(customers[1], "query finalizada");
+      res.send({mensaje: customers})
+    } catch (error) {
+      console.log(error);
+    }
   }
   post(req, res){
     res.send({mensaje: `post profesores`})
